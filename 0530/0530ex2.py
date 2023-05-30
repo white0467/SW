@@ -11,7 +11,7 @@ minvalue=min(list1[0]) #minvalue에 리스트의 최소값 초기화
 for i in range(len(list1)):
     print(str(i+1)+"번째 줄의 합계:",sum(list1[i]))  #각 줄의 합계
 
-    if minvalue<min(list1[i]):  #minvalue와 리스트요소 비교
-        minvalue=list1[i]
+    if minvalue>min(list1[i]):  #minvalue와 리스트요소 비교
+        minvalue=min(list1[i])
 
 print("리스트에서 가장 작은 값:",minvalue)
